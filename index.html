@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Love ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MUSIC -->
+<audio id="bgMusic" loop>
+  <source src="assets/music/bg.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicToggle">🎵</button>
+
+<!-- COUNTDOWN -->
+<div id="countdownPage" class="page active">
+
+<h1>For My Love 💗</h1>
+<div id="timer"></div>
+<p id="loveLine" class="loveLine"></p>
+
+</div>
+
+<!-- LOGIN -->
+<div id="loginPage" class="page">
+
+<h2>Prove you're her 😏</h2>
+
+<input id="user" placeholder="Username">
+<input id="pass" type="password" placeholder="Password">
+
+<button onclick="login()">Enter</button>
+
+<p id="loginMsg"></p>
+
+</div>
+
+<!-- HOME -->
+<div id="homePage" class="page">
+
+<h2>Welcome Andri 💞</h2>
+
+<div class="menu">
+
+<button onclick="openSection('note')">💌 Note of Love</button>
+<button onclick="openSection('memories')">🏠 House of Memories</button>
+<button onclick="openSection('gifts')">🎁 To You With Love</button>
+<button onclick="openSection('personal')">🎥 Personal Message</button>
+
+</div>
+
+</div>
+
+<!-- NOTE -->
+<div id="notePage" class="page content">
+
+<h2>My Letter To You</h2>
+
+<div id="noteText">
+My Love,<br><br>
+I’ll fill this later…
+</div>
+
+<button onclick="goHome()">Back</button>
+
+</div>
+
+<!-- MEMORIES -->
+
+<div id="memoriesPage" class="page">
+
+<h2 class="hallTitle">House of Memories</h2>
+
+<div id="hallWrapper">
+  <div id="hallScene">
+
+   <div class="floor"></div>
+   <div class="ceiling"></div>
+   <div class="leftWall"></div>
+   <div class="rightWall"></div>
+ </div>
+</div>
+
+<button onclick="goHome()">Exit</button>
+
+</div>
+
+
+<!-- GIFTS -->
+<div id="giftsPage" class="page content">
+
+<h2>To You With Love</h2>
+
+<div id="giftsGrid"></div>
+
+<button onclick="goHome()">Back</button>
+
+</div>
+
+<!-- PERSONAL -->
+<div id="personalPage" class="page content">
+
+<h2>Just For You</h2>
+
+<div id="letter">
+I love you more than words…
+</div>
+
+<video id="loveVideo" controls>
+<source src="assets/videos/video1.mp4">
+</video>
+
+<button onclick="goHome()">Back</button>
+
+</div>
+
+<!-- ADMIN -->
+<div id="adminPage" class="page">
+
+<h2>Admin Panel</h2>
+
+<input id="adminUser" placeholder="Admin Username">
+<input id="adminPass" type="password" placeholder="Admin Password">
+
+<button onclick="adminLogin()">Login</button>
+
+<p id="adminMsg"></p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
